@@ -1,0 +1,17 @@
+<!doctype html>
+<html ⚡>
+<head>
+    {% include_relative _layouts/amp_boilerplate.html %}
+    <title>{{page.title | strip_html}}</title>
+</head>
+<body>
+    <div class="section bg-dark">
+        <div class="container grid-lg text-center text-gray">
+            <h1>{{page.title}}</h1>
+        </div>
+    </div>
+    <div class="section container grid-lg">
+        {{content}}
+    </div>
+</body>
+</html>
