@@ -1,0 +1,8 @@
+- name: Route Dokumentation für Shopware Next
+  subtitle: Because there is no REST documentation yet
+  urls:
+    project: NoRouteDocumentation
+    github: NoRouteDocumentation
+  tags:
+    - shopware-plugin
+    - shopware-api

@@ -1,0 +1,38 @@
+<div class="tile">
+    <div class="tile-icon">
+        <div class="btn bg-primary text-light">
+            <i class="icon icon-check centered"></i>                        
+        </div>
+    </div>
+    <div class="tile-content">
+        <p class="tile-title mt-2">{{repository.name}}</p>
+        {% if repository.subtitle %}
+            <p class="tile-subtitle text-gray">{{repository.subtitle}}</p>
+        {% endif %}
+        {% if repository.tags %}
+            <p class="tile-subtitle">
+                {% for tag in repository.tags %}
+                    <span class="m-1 p-1 label label-rounded">{{tag}}</span>
+                {% endfor %}
+            </p>
+        {% endif %}
+        {% if repository.urls %}
+            <p class="text-right">
+                <span class="btn-group">
+                    {% if repository.urls.project %}
+                        <a class="btn btn-primary" href="/{{repository.urls.project}}">
+                            <i class="icon icon-share"></i>
+                            Projekt
+                        </a>
+                    {% endif %}
+                    {% if repository.urls.github %}
+                        <a class="btn" href="https://github.com/niemand-online/{{repository.urls.github}}">
+                            <i class="icon icon-resize-horiz"></i>
+                            Github
+                        </a>
+                    {% endif %}
+                </span>
+            </p>
+        {% endif %}
+    </div>
+</div>
