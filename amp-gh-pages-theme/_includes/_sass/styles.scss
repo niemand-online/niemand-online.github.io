@@ -1,9 +1,0 @@
-h1, .h1 {
-    .loading::after {
-        border: $border-width-lg solid rgba($gray-color, 0.5);
-        border-right-color: transparent;
-        border-top-color: transparent;
-        top: unset;
-        bottom: 0.4rem;
-    }
-}
