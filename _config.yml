@@ -34,5 +34,7 @@ markdown: kramdown
 #   - vendor/gems/
 #   - vendor/ruby/
 sass:
-    sass_dir: _sass
+    sass_dir: ./amp-gh-pages-theme/_includes/_sass
     style: compressed
+layouts_dir: ./amp-gh-pages-theme/_layouts
+includes_dir: ./amp-gh-pages-theme/_includes
