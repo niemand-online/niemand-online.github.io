@@ -31,6 +31,16 @@
                             Github
                         </a>
                     {% endif %}
+                    {% if repository.urls.codacy %}
+                        <a class="btn" href="{{repository.urls.codacy.site}}">
+                            {% if repository.urls.codacy.badge %}
+                                <amp-img alt="Codacy" src="{{repository.urls.codacy.badge}}" layout="fixed" height="20" width="68"></amp-img>
+                            {% else %}
+                                <i class="icon icon-flag"></i>
+                                Codacy
+                            {% endif %}
+                        </a>
+                    {% endif %}
                 </span>
             </p>
         {% endif %}

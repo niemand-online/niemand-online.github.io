@@ -3,6 +3,9 @@
   urls:
     project: NoRouteDocumentation
     github: NoRouteDocumentation
+    codacy:
+      badge: https://api.codacy.com/project/badge/Grade/a436d792d5e34cbdb91106793e8feb69
+      site: https://www.codacy.com/app/niemand-online/NoRouteDocumentation?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=niemand-online/NoRouteDocumentation&amp;utm_campaign=Badge_Grade
   tags:
     - shopware-plugin
     - shopware-api
